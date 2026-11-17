@@ -1,0 +1,38 @@
+{
+  "name": "itmosoft/laravel-leads",
+  "description": "Lead capture, qualification, assignment, pipeline stages, and conversion tracking for Laravel applications.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.3",
+    "illuminate/contracts": "^12.0 || ^13.0",
+    "illuminate/database": "^12.0 || ^13.0",
+    "illuminate/support": "^12.0 || ^13.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^10.0 || ^11.0",
+    "phpunit/phpunit": "^11.0 || ^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ItmoSoft\\Leads\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ItmoSoft\\Leads\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ItmoSoft\\Leads\\LeadsServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
